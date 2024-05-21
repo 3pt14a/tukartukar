@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    <div class="box-container"> <!--supermain opening-->
+        <div class="box box1"> <!--leftnav or left column opening-->
+            <div class="content">
+                <h1 style="font-size: 30px; margin-bottom: 25px; padding: 9px;"><i><i class="fa-solid fa-lines-leaning"></i></i> My Library</h1>
+                <div class="librarylist">
+                    <div class="item">
+                        <img src="images/liked.png" alt="Liked Songs">
+                        <p>Liked Songs</p>
+                    </div>
+                    <div class="item">
+                        <img src="images/albumcover.jpg" alt="She Loves Me Not">
+                        <p>She Loves Me Not</p>
+                    </div>
+                    <div class="item">
+                        <img src="images/th.jpg" alt="The Tortured Poets Department">
+                        <p>The Tortured Poets Department</p>
+                    </div>
+                    <div class="item">
+                        <img src="images/papercut.png" alt="Papercuts">
+                        <p>Papercuts</p>
+                    </div>
+                    <div class="item">
+                        <img src="images/threecheers.png" alt="Three Cheers for Sweet Revenge">
+                        <p>Three Cheers for Sweet Revenge</p>
+                    </div>
+                </div>
+            </div>
+        </div> <!--leftnav or left column closing-->
+
+        <div class="box box2"> <!--main-container or center column opening-->
+            <div class="content">
+                <div class="currentplay">Currently Playing...</div>
+                <div id="left-column">
+                    <div id="playlist-header">
+                        <table>
+                            <tr>
+                                <td>
+                                    <img src="images/albumcover.jpg">
+                                </td>
+                                <td style="padding: 15px ;">
+                                    <p style="padding: 5px;">EP</p>
+                                    <h1 style="padding: 5px;">She Loves Me Not</h1>
+                                    <p style="padding: 5px;">Jeff Bernat • 2019 • 4 songs, 14 min 33 sec</p>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div id="main">
+                        <div id="table" class="left">
+                            <table>
+                                <thead>
+                                    <tr id="playlisthead">
+                                        <td>#</td>
+                                        <td>Title</td>
+                                        <td> </td>
+                                        <td> </td>
+                                        <td><i class="fa-regular fa-clock"></i></td>
+                                    </tr>
+                                </thead>
+
+                                <tbody id="song-list"></tbody>
+                            </table>
+                        </div>
+
+                        
+                    </div>
+                </div>
+            </div>
+        </div> <!--main-container or center column closing-->
+
+        <div class="box box3"> <!--rightnav or right column opening-->
+            <div class="content">
+                <div class="player">
+                    <div class="logo">
+                        <i class="fa-solid fa-music"></i>
+                    </div>
+
+                    <span id="musicName"></span>
+                    <audio id="player"></audio>
+                    <div class="controls">
+                        <button id="prev" title="Previous"><i class="fa-solid fa-backward-step"></i></button>
+                        <button id="pausePlay" title="Play/Pause"><i class="fa-solid fa-play"></i></button>
+                        <button id="next" title="Next"><i class="fa-solid fa-forward-step"></i></i></button>
+                    </div>
+
+                    <div class="footer">
+                        <div class="progress-bar">
+                            <div class="progress"></div>
+                        </div>
+                        <div class="time">
+                            <span id="currentTime">0:00</span>
+                            <span id="duration">0:00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!--rightnav or right column opening-->       
+    </div> <!--supermain closing-->
+    
+<script src="js/script.js"></script>
+<script src="https://kit.fontawesome.com/43ab8448f1.js" crossorigin="anonymous"></script>
+</body>
+</html>
